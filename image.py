@@ -26,7 +26,7 @@ def writeImage(data):
         print("Unable to print new image")
 
 def main():
-    filename = 'image.jpg'
+    filename = input("enter file path: ")
     with open(filename, "rb") as f:
         data=f.read()
     hex = conToHex(data)
